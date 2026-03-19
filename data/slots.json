@@ -1,0 +1,57 @@
+{
+  "cabinet": "Clinique Dentaire Saint-Michel",
+  "date_reference": "Les dialogues se déroulent le mercredi 11 mars 2026.",
+  "horaires_ouverture": {
+    "lundi_vendredi": "08:30 - 19:00",
+    "samedi": "09:00 - 13:00",
+    "dimanche": "Fermé"
+  },
+  "praticiens": [
+    {
+      "nom": "Dr. Martin",
+      "specialite": "Soins généraux",
+      "creneaux": [
+        { "date": "2026-03-11", "jour": "mercredi", "heure": "09:00", "type": "standard" },
+        { "date": "2026-03-11", "jour": "mercredi", "heure": "14:00", "type": "standard" },
+        { "date": "2026-03-11", "jour": "mercredi", "heure": "17:30", "type": "urgence" },
+        { "date": "2026-03-12", "jour": "jeudi", "heure": "10:00", "type": "standard" },
+        { "date": "2026-03-12", "jour": "jeudi", "heure": "15:00", "type": "standard" },
+        { "date": "2026-03-13", "jour": "vendredi", "heure": "09:00", "type": "standard" },
+        { "date": "2026-03-13", "jour": "vendredi", "heure": "11:00", "type": "urgence" },
+        { "date": "2026-03-13", "jour": "vendredi", "heure": "16:00", "type": "standard" },
+        { "date": "2026-03-16", "jour": "lundi", "heure": "09:00", "type": "standard" },
+        { "date": "2026-03-16", "jour": "lundi", "heure": "14:00", "type": "standard" },
+        { "date": "2026-03-17", "jour": "mardi", "heure": "10:00", "type": "standard" },
+        { "date": "2026-03-17", "jour": "mardi", "heure": "16:00", "type": "standard" }
+      ]
+    },
+    {
+      "nom": "Dr. Dupont",
+      "specialite": "Orthodontie",
+      "creneaux": [
+        { "date": "2026-03-11", "jour": "mercredi", "heure": "10:00", "type": "standard" },
+        { "date": "2026-03-11", "jour": "mercredi", "heure": "16:00", "type": "standard" },
+        { "date": "2026-03-12", "jour": "jeudi", "heure": "09:00", "type": "urgence" },
+        { "date": "2026-03-12", "jour": "jeudi", "heure": "14:00", "type": "standard" },
+        { "date": "2026-03-13", "jour": "vendredi", "heure": "10:00", "type": "standard" },
+        { "date": "2026-03-13", "jour": "vendredi", "heure": "15:00", "type": "standard" },
+        { "date": "2026-03-16", "jour": "lundi", "heure": "11:00", "type": "standard" },
+        { "date": "2026-03-17", "jour": "mardi", "heure": "09:00", "type": "standard" },
+        { "date": "2026-03-17", "jour": "mardi", "heure": "14:00", "type": "standard" }
+      ]
+    },
+    {
+      "nom": "Dr. Lefèvre",
+      "specialite": "Implantologie",
+      "creneaux": [
+        { "date": "2026-03-11", "jour": "mercredi", "heure": "11:00", "type": "standard" },
+        { "date": "2026-03-11", "jour": "mercredi", "heure": "18:00", "type": "urgence" },
+        { "date": "2026-03-12", "jour": "jeudi", "heure": "09:30", "type": "standard" },
+        { "date": "2026-03-12", "jour": "jeudi", "heure": "16:00", "type": "standard" },
+        { "date": "2026-03-13", "jour": "vendredi", "heure": "14:00", "type": "standard" },
+        { "date": "2026-03-16", "jour": "lundi", "heure": "10:00", "type": "standard" },
+        { "date": "2026-03-17", "jour": "mardi", "heure": "15:00", "type": "standard" }
+      ]
+    }
+  ]
+}

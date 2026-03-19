@@ -1,0 +1,13 @@
+{
+  "partenaires_tiers_payant": [
+    { "nom": "MGEN", "code": "MGEN" },
+    { "nom": "Axa Santé", "code": "AXA" },
+    { "nom": "Allianz", "code": "ALZ" },
+    { "nom": "Humanis", "code": "HUM" },
+    { "nom": "Harmonie Mutuelle", "code": "HAR" },
+    { "nom": "MAIF", "code": "MAIF" },
+    { "nom": "AG2R La Mondiale", "code": "AG2R" },
+    { "nom": "MGEN Filia", "code": "MGENF" }
+  ],
+  "politique_hors_partenariat": "Pour les mutuelles non listées ci-dessus, le cabinet ne pratique pas le tiers payant. Le patient règle la consultation et transmet la feuille de soins à sa mutuelle pour remboursement."
+}
