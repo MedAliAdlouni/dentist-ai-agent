@@ -79,15 +79,8 @@ L'évaluation hybride combine deux approches complémentaires :
 
 ## 4. Résultats
 
-**Taux de conformité global : ~85%** (déterministe : 100% | LLM-judge : ~75%)
+**Taux de conformité global : ~85%** (déterministe : ?% | LLM-judge : ~74%)
 
-| Règle | Conformité | Precision | Recall | F1   | Analyse |
-|-------|-----------|-----------|--------|------|---------|
-| R1    | 84%       | 0.29      | 1.00   | 0.44 | Le juge sur-détecte R1 (FP élevés) |
-| R2    | 40%       | 1.00      | 1.00   | 1.00 | Score bas car le LLM génère une réponse vide au transfert |
-| R3    | 90%       | 0.50      | 1.00   | 0.67 | Bien traitée ; quelques FP du juge |
-| R4    | 83%       | 0.82      | 1.00   | 0.90 | Principale source d'erreurs sémantiques |
-| R5    | 94%       | 1.00      | 0.44   | 0.61 | Sous-détectée par le juge (recall faible) |
 
 **Échecs notables :**
 
