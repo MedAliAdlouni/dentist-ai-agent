@@ -101,4 +101,12 @@ L'évaluation hybride combine deux approches complémentaires :
 
 ## 5. Mise en production
 
-En contexte de téléphonie temps réel, la latence du pipeline LLM est critique : Gemini 2.5 Flash affiche ~1-2s par tour, acceptable pour un SVI mais à surveiller sous charge. Un **streaming SSE** vers le moteur TTS (déjà intégré via `voice.py`) permettrait de commencer la synthèse vocale avant la fin de la génération. Le **monitoring** devrait tracer trois métriques clés : latence P95 par tour, taux d'appel d'outils (proxy de la conformité déterministe), et taux de transfert humain (indicateur de frustration). Les **règles métier** (seuil de douleur, mapping praticien/spécialité, mutuelles partenaires) sont aujourd'hui codées en dur dans le prompt et les fichiers JSON ; en production, elles devraient être pilotées depuis un backoffice avec rechargement à chaud, sans redéploiement. Un **fallback** vers le secrétariat humain doit se déclencher automatiquement après 3 échecs consécutifs d'appel d'outil ou en cas de timeout LLM (>5s). Enfin, les fichiers `slots.json` et `mutuelles.json` devraient être remplacés par des appels API au logiciel métier du cabinet pour garantir la fraîcheur des données de créneaux et de partenariats.
+- **Déploiement** — Conteneurisation via `Dockerfile` (Python 3.12 + `uv`). Deux options GCP pour une MEP rapide :
+  - **Cloud Run** — Déploiement serverless avec autoscaling et cold starts maîtrisés
+  - **Vertex AI Agent Engine** — Hosting managé d'agents avec intégration native du SDK Google GenAI et gestion du cycle de vie
+- **Monitoring** — Trois axes à suivre via Cloud Monitoring / Logging :
+  - **Latence P95** par tour (cible < 2s pour le temps réel téléphonique)
+  - **Coût par appel** en tokens Gemini (entrée + sortie) pour anticiper la volumétrie
+  - **Satisfaction patient** — Taux de transfert humain (proxy de frustration) et score CSAT post-appel
+- **Fallback** — Transfert automatique vers le secrétariat humain après 3 échecs d'outil ou timeout LLM (>5s)
+- **Données** — Remplacer les fichiers JSON statiques (`slots.json`, `mutuelles.json`) par des appels API au logiciel métier du cabinet pour garantir la fraîcheur des données
