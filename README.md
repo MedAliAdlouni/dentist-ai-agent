@@ -64,9 +64,4 @@ Double strategie :
 
 Produit un taux de conformite global + matrice de confusion par regle.
 
-## Donnees
-
-- **Few-shot** (5 dialogues) : D2, D9, D12, D14, D15 — exemples complets dans le system prompt
-- **Dev** (8 dialogues) : D1, D2, D3, D8, D9, D12, D14, D15 — developpement et tests
-- **Eval** (7 dialogues) : D4, D5, D6, D7, D10, D11, D13 — non vus par le modele
-- Date de reference : mercredi 11 mars 2026
+Date de reference : mercredi 11 mars 2026
